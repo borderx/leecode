@@ -77,11 +77,13 @@ public class Solution399_2 {
 		for(int i = 0; i < graph[start].length; i ++) {
 			if(graph[start][i] != null && !visited[start][i]) {
 				visited[start][i] = true;
+				visited[i][start] = true;
 				Double res = dfsFind(graph, i, end, visited);
 				if(res != null) {
 					return res * graph[start][i];
 				} else {
 					visited[start][i] = false;
+					visited[i][start] = false;
 				}
 			}
 		}
