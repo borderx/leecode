@@ -59,6 +59,7 @@ public class Solution2 {
 		
 		ListNode node4 = new ListNode(4);
 		ListNode node5 = new ListNode(6, node4);
+		@SuppressWarnings("unused")
 		ListNode node6 = new ListNode(5, node5);
 		ListNode node7 = new ListNode(0);
 		
